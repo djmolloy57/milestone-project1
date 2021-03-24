@@ -39,6 +39,22 @@ nav ul li:hover {
     padding: 0px 16px;
 
 }
+.top-padding{
+  padding-top: 10px;
+}
+
+#video-list {
+  text-align: center;
+
+}
+.item-video{
+  display: inline;
+  padding: 1%;
+
+}
+
+
+
 
 footer{
     height: 150px;
