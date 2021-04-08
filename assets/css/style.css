@@ -1,140 +1,476 @@
 
 /*Mobile first and then use Media Query for larger screens like tablet and desktops */
-
 body {
-    background-color: white;
+    background-color: grey;
     color: black;
-    font-size: 16px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* default font size of the web page */
+    font-family: Arial, Helvectica, sans-serif;
     padding: 0px;
     margin: 0px;
 }
+
+/* Navigation styling  */
 nav {
-    background-color: cadetblue;
-    color: white;
+
+  width: 100%;
+  border-bottom: 10px;
+
 
 }
 nav ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    font-size: 0px;
+
+  width: 100%;
+	margin: 0px;
+  padding: 0px;
+	list-style-type: none;
+	font-size: 0px;
+  text-align: center;
+  width: 80%;
+  display: none;
+
 }
+
 
 nav ul li {
-    padding: 16px;
-    text-align: center;
-    font-size: 1.2rem;
-    border-bottom: 1px solid black;
-    transition: background-color 0.2s;
+
+  background-color: maroon;
+  color: white;
+  padding-top: 15%;
+	padding: 14px;
+  text-align:  center;
+  font-size: 1.1rem;
+  border-bottom: 1px solid black;
+  transition: background-color 0.2s;
 }
+
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #EAEAB;
+  margin: 0;
+  font-size: 15px;
+}
+
 
 nav ul li:hover {
-    background-color: black;
+	background-color: black;
+
 }
+.burger_menu {
+  position: absolute;
+  margin: 0px 35px 35px 35px;
+  font-size: 25px;
+  display: block;
+  width: 26px;
+  float: right;
+  padding-right: 0.01%;
+  cursor: pointer;
+  padding-bottom: 10%;
+  top: 35px;
+  right: 0;
+
+}
+
+#toggle:checked + #menu {
+
+  display: block;
+
+
+}
+#toggle {
+  display: none;
+}
+
+/* styling the hero/band logo image */
+
+
+
+
+ img{
+         border-top: 50px;
+         max-width: 100%;
+         max-height: 100%;
+         display: block; /* remove extra space below image */
+
+
+
+     }
+
+/* positioning rule to apply to different divs/sections on the website pages */
 
 .position-container {
-    max-width: 1020px;
-    margin: 0px auto;
-    padding: 0px 16px;
+   max-width: 1020px;
+   margin: 0px auto;
+   padding: 0px 16px;
 
 }
-.top-padding{
-  padding-top: 10px;
+.title_position-container {
+
+   margin: 0px auto;
+   padding: 0px 16px;
+   text-align: center;
+
+}
+.menu_position-container {
+
+   margin: 10px auto;
+   padding: 0px -14px 0px -14px;
+   text-align: right;
+
 }
 
+/* styling rules for the video's on the live page   */
 #video-list {
   text-align: center;
+  margin-top: 15px;
 
 }
+iframe {
+  border: 1px solid red;
+}
+
 .item-video{
   display: inline;
   padding: 1%;
 
 }
 
+/* styling for the testimonial page  */
+.star-wrapper{
+
+  width: 58%;
+  height: 130px;
+  padding: 1px 50px 0 50px;
+  border-top: 10px;
+  /*border-bottom: 10px; /* this rule made no differencce comment out to test*/
+  background-color: red;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+.star-section h5{
+  color: black;
+  margin-top: 15px;
+
+}
+
+.star-section ol{
+  list-style-type: none;
+}
+.reviewers {
 
 
+}
+.review_container_pos{
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 16px;
+  overflow: auto;
+  height: 300px;
+  width: 70%;
+
+}
+
+.test_title{
+  background-color: maroon;
+  color: #fff;
+  font-size: 90%;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 16px;
+  width: 66%;
+  margin-top: 5px;
+}
+
+.user_review {
+  height: 70px; /* added rule 27/03/2021 at 15:13 so I can set the review height to suitable - dimension - worked Yes/No - Yes */
+  margin-top: 0px;
+}
+
+.user_review > p{
+  font-style: italic;  /*Added rule 27/03/2021 at 15:21 added text italic for review firts paragraph - Worked Yes */
+  overflow-wrap: break-word; /*Added rule 27/03/2021 at 18:44 to ensure text wraps to next line */
+
+}
+
+
+.band_pic, .testpic {
+  text-align: center;
+  display: block;
+  height: 70%;
+  width: 70%;
+  margin-top: 15px;
+  max-width: 1020px;
+  padding: 0px 16px;
+  margin-left: 50px;
+}
+
+.user_review footer > p span {
+  font-weight: bold; /*Added rule 27/03/2021 at 15:19 added bold to span - Worked Yes */
+}
+
+/* Footer styling for the social media */
 
 footer{
-    height: 150px;
+  height: 150px;
+
 }
 
 footer ul{
-    text-align: center;
-
+  text-align: center;
 }
+
 footer ul > li{
-    display: inline-block;
-}
-footer ul > li i{
-    font-size: 120%;
-    
+  display: inline-block;
+  margin-right: 50px; /* worked on spacing out social media icons */
+  font-size: 150%; /*worked on enlarging social media icons*/
+
 }
 
-.gig-wrapper {
+footer ul >li i{
+  font-size: 120%;
+  margin: 10%;
+  padding: 20%;
+
+ color: black;  /*worked on colouring social media icons*/
+
+}
+.form-section {
+    clear: left;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+/* signup-form css was taken from Love Running project - needs tweeking */
+.signup-form {
+    margin: 150px 10% 0 0;
+    /*margin-top: 150%;*/
+    margin-top: 5%;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    /*max-width: 400px;*/
+    max-width: 380px;
+    /*position: absolute;*/
+    left: 10%;
     padding: 30px;
-    display: flex;
-    align-items: center;
 }
 
-.gig-wrapper h3 {
-    height: 40px;
+.signup-form h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
+
+/* This is styling for the gig info display on index/main page */
+.gig-wrapper {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+
+}
+.gig-wrapper h3{
+  height: 40px;
 }
 
 .gig {
-    height: 50px;
-    overflow: hidden;
+  height: 50px;
+  overflow: hidden;
 }
 
 .gig > div span {
-    padding: 5px 15px;
-    height: 40px;
-    margin-bottom: 30px;
-    display: block;
+  padding: 5px 15px;
+  height: 40px;
+  margin-bottom: 30px;
+  display: block;
 
 }
 .gig div:first-child{
-    animation: slide 8s linear infinite;
-}
+  animation: slide 8s linear infinite;
 
+}
+/* this is the slide frames update */
 @keyframes slide{
-    0%{
-        margin-top: -240px
-    }
-    5%{
-        margin-top: -160px;
-    }
-    35%{
-        margin-top: -160px;
-    }
-    40%{
-        margin-top: -80px;
+  0%{
+    margin-top: -240px
+  }
+  5%{
+    margin-top: -160px;
 
-    }
-    65%{
-        margin-top: -80px;
-    }
-    70%{
-        margin-top: 0;
-    }
-    99.99%{
-        margin-top: 0;
-    }
-    100%{
-        margin-top: -240px;
-    }
-
+  }
+  35%{
+    margin-top: -160px;
+  }
+  40%{
+    margin-top: -80px;
+  }
+  65%{
+    margin-top: -80px;
+  }
+  70%{
+    margin-top: 0;
+  }
+  99.99%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: -240px;
+  }
 }
+
+/* tablet and desktop format styling below */
 
 @media screen and (min-width: 700px) {
-    nav ul {
-        text-align: right;
-    }
-    nav ul li {
-        display: inline-block;
-        border-bottom: 0px;
-        border-left: 1px solid block;
-        text-align: left;
-    }
+
+  .title_position-container {
+     margin: 0px auto;
+     padding-left: 17%;
+     text-align: left;
+
+  }
+  nav {
+    height: 70px; /*added 27/03/2021 @ 23:42 to fix menu items height - work Yes/No - Yes - corrected height so it shows menu text which it does*/
+    background-color: black;
+    text-align: left;
+  }
+
+
+  nav ul {
+
+
+    background-color: black;
+    max-width: 1210px;
+    margin: 15px auto;
+    padding: 0px -10px 0px -10px;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+
+ }
+
+
+
+
+  nav ul > li {
+
+    display: inline-block;
+    border-left: 1px solid black; /*comment out 27/03/2021 at 13:45 to see what happens does menu option seperations go away Yes/No - YES */
+    text-align: center;
+    background-color: maroon;
+    margin-right: 5px;
+
+   }
+
+
+
+  .burger_menu{
+    display: none;
+
+  }
+
+
+  .band_pic{
+    float: left;
+    width: 20%;
+    padding-left: 17%;
+    height: 20em;
+    object-fit: cover;*/
+    border-right: 10px;
+
+  }
+
+  .bio {
+    float: left;
+    width: 40%;
+    padding-top: 5%;
+    padding-left: 5%;
+
+  }
+  img{
+          max-width: 100%;
+          max-height: 100%;
+          display: block; /* remove extra space below image */
+      }
+
+  .review_container_pos{
+     float: left;
+     width: 40%;
+     padding-left: 17%;
+  }
+  .testpic{
+    float: left;
+    width: 20%;
+    padding-left: 5%;
+    height: 20em;
+
+  }
+  #social_media{
+    clear: both;
+
+  }
+
+  .gig-wrapper{
+    clear: both;
+  }
+  .star-wrapper{
+    width: 20%;
+  }
+
+  .reviewers {
+    width: 500px;
+  }
+
+  /*below is setting to change to a custom scroll-bar has a nicer appearance tham the default scrollbar  */
+  /* width */
+  ::-webkit-scrollbar {
+  width: 10px;
+ }
+
+/* Track */
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+ }
+
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #888;
+ }
+
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background: #555;
+ }
+
+
+
 }
