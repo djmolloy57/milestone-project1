@@ -2,133 +2,98 @@
 /*Mobile first and then use Media Query for larger screens like tablet and desktops */
 
 *{ 
-  padding: 0px;
-  margin: 0px;
-  border:0;
+    padding: 0px;
+    margin: 0px;
+    border:0;
 }
-
 :root {
-  --white: #fff;
-
+    --white: #fff;
 }
-
-
 body {
     background-color: grey;
     color: black;
     font-size: 16px; 
     font-family: Arial, Helvectica, sans-serif;
-
-
 }
-
 #position_header_title {
-  background-color: maroon;
-  padding: 12px; 
-  margin: 15px 0px 10px 0px; 
-  border: 1px solid black;
-  height: 10%;
-  width: 100%;
-  text-align: center;
-
+    background-color: maroon;
+    padding: 12px; 
+    margin: 15px 0px 10px 0px; 
+    border: 1px solid black;
+    height: 10%;
+    width: 100%;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 150%;
+    font-size: 150%;
 }
-
-
 
 /* Navigation styling  */
 nav {
 
-  width: 100%;
-  border-bottom: 10px;
-
-
+    width: 100%;
+    border-bottom: 10px;
 }
 nav ul {
-
-  width: 100%;
-  list-style-type: none;
-  text-align: center;
-  width: 80%;
-  display: none;
-
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    width: 80%;
+    display: none;
 }
-
 
 nav ul li {
-
-  background-color: maroon;
-  color: white;
-  padding: 14px;
-  text-align:  center;
-  font-size: 1.1rem;
-  border-bottom: 1px solid black;
-  transition: background-color 0.2s;
+    background-color: maroon;
+    color: white;
+    padding: 14px;
+    text-align:  center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    transition: background-color 0.2s;
 }
-
 
 nav a{
-  text-decoration: none;
-  /*color: #fff;*/
-  color: var(--white);
-
-  display: block;
-  border-bottom: 1px solid #EAEAB;
-
-  font-size: 15px;
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    border-bottom: 1px solid #EAEAB;
+    font-size: 15px;
 }
 
-
 nav ul li:hover {
-	background-color: black;
+    background-color: black;
 
 }
 .burger_menu {
-  position: absolute;
-  margin: 0px 10px 35px 35px;
-
-  font-size: 25px;
-  display: block;
-  
-  float: right;
-  padding-right: 0.01%;
-  cursor: pointer;
-  padding-bottom: 10%; 
-  top: 35px;
-  right: 0;
-  color: var(--white);
-
-
+    position: absolute;
+    margin: 0px 10px 35px 35px;
+    font-size: 25px;
+    display: block;
+    float: right;
+    padding-right: 0.01%;
+    cursor: pointer;
+    padding-bottom: 10%; 
+    top: 35px;
+    right: 0;
+    color: var(--white);
 }
-
 
 #toggle:checked + #menu {
-
-  display: block;
-
-
+    display: block;
 }
+
 #toggle {
-  display: none;
+    display: none;
 }
 
 /* styling the hero/band logo image */
 
-
-
-
- img{ 
-         
-         max-width: 100%;
-         max-height: 100%;
-         display: block; /* remove extra space below image */
-
-
-
-     }
+img{ 
+    max-width: 100%;
+    max-height: 100%;
+    display: block; 
+}
 
 /* positioning rule to apply to different divs/sections on the website pages */
 
@@ -136,193 +101,158 @@ nav ul li:hover {
    max-width: 1020px; 
    margin: 0px auto; 
    padding: 0px 20px; 
-
 }
 .position-form {
-
    margin: 5px 15px 15px 48px;
-  
-
 }
 
-
 .bio {
-
-  width: 90%; 
-  padding-top: 5%;  
-  padding-left: 5%; 
-
+    width: 90%; 
+    padding-top: 5%;  
+    padding-left: 5%; 
 }
 
 .menu_position-container {
-
-   margin: 10px auto;
-   padding: 0px -14px 0px -14px;
-   text-align: right;
-
+    margin: 10px auto;
+    padding: 0px -14px 0px -14px;
+    text-align: right;
 }
 
 /* styling rules for the video's on the live page   */
 #video-list {
-  text-align: center;
-  margin-top: 10px;
-
+    text-align: center;
+    margin-top: 10px;
 }
 iframe {
-  border: 1px solid red;
-  font-size: 70%; 
-  width: 350px; 
-  height: 200px;
+    border: 1px solid red;
+    font-size: 70%; 
+    width: 350px; 
+    height: 200px;
 }
 
 .item-video{
-  display: inline;
-  padding: 1%;
-
+    display: inline;
+    padding: 1%;
 }
 
 .ToFindOut p {
-
-  padding-top: 10px;
-  padding-left: 40px;
-  font-size: 80%;
-
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 80%;
 }
 
 /* styling for the testimonial page  */
 .star-wrapper{
-
-  width: 58%;
-  height: 130px;
-  padding: 1px 50px 0 50px;
-  border-top: 10px;
-  background-color: maroon;
-  margin-top: 15px;
-  margin-bottom: 1px;
+    width: 58%;
+    height: 130px;
+    padding: 1px 50px 0 50px;
+    border-top: 10px;
+    background-color: maroon;
+    margin-top: 15px;
+    margin-bottom: 1px;
 }
 .star-section h5{
-  /*color: #fff;*/
-  color: var(--white);
-  font-size: 90%;
-  margin-top: 12px;
-  margin-bottom: 2px;
-  margin-left: 1px;
-
+    color: var(--white);
+    font-size: 90%;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    margin-left: 1px;
 }
 
 .star-section ol{
-  list-style-type: none;
-  
-
-  font-weight: bold;
-  margin: 5px 0px 0px 0px;
-  text-align: left;
-  padding: 0px 0px;
-
+    list-style-type: none;
+    font-weight: bold;
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+    padding: 0px 0px;
 }
 .star-section li{
-  font-size: 90%;
-  text-align: left;
-
+    font-size: 90%;
+    text-align: left;
 }
 
 .review_container_pos{
-  max-width: 1020px;
-  margin: 0px auto;
-  padding: 0px 16px;
-  overflow: auto;
-  height: 300px;
-  width: 70%;
-
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    overflow: auto;
+    height: 300px;
+    width: 70%;
 }
 
 .test_title{
-  background-color: maroon;
-  /*color: #fff;*/
-  color: var(--white);
-  font-size: 90%;
-  max-width: 1020px;
-  margin: 0px auto;
-  padding: 0px 16px;
-  width: 66%;
-  margin-top: 5px;
+    background-color: maroon;
+    color: var(--white);
+    font-size: 90%;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    width: 66%;
+    margin-top: 5px;
 }
 
 .user_review {
-  height: 70px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .user_review > p{
-
-  font-style: italic;  
-  overflow-wrap: break-word; 
-
+    font-style: italic;  
+    overflow-wrap: break-word; 
 }
 
 
 .band_pic, .testpic {
-  position: relative;
-  text-align: center;
-  display: block;
-  height: 70%;
-  width: 70%;
-  margin-top: 15px;
-  max-width: 1020px;
-  padding: 0px 16px;
-  margin-left: 50px;
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 70%;
+    width: 70%;
+    margin-top: 15px;
+    max-width: 1020px;
+    padding: 0px 16px;
+    margin-left: 50px;
 }
 .user_review footer {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .user_review footer > p span {
-  font-weight: bold; 
+    font-weight: bold; 
 }
 
 /* Footer styling for the social media */
 
 footer{
-  height: 150px;
-  padding-top: 20px;
-
+    height: 150px;
+    padding-top: 20px;
 }
 
 footer ul{
-  text-align: center;
+    text-align: center;
 }
 
 footer ul > li{
-  display: inline-block;
-  
-  margin-right: 30px; /*spacing out social media icons -orig setting */
-  font-size: 150%; /*enlarging social media icons - */
-
-
+    display: inline-block;
+    margin-right: 30px; /*spacing out social media icons -orig setting */
+    font-size: 150%; /*enlarging social media icons - */
 }
 
 footer ul >li i{
-
-  font-size: 100%;
-  margin: 10%;
-  padding: 20%;
-  color: black;  /*colouring social media icons*/
-
+    font-size: 100%;
+    margin: 10%;
+    padding: 20%;
+    color: black;  /*colouring social media icons*/
 }
 
-
 .booking-form {
-   
     margin: 30px 10% 0 0;
-
     margin-top: 5%;
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
     max-width: 380px;
-
     left: 20%;
-   
     padding: 20px;
 }
 
@@ -340,25 +270,20 @@ footer ul >li i{
     border: 1px solid #fafafa;
     border-radius: 2px;
 }
-
 .text-input:hover {
     border-color: #f16c6b;
 }
 
 .booking-button {
-   
     margin-top: 10px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;*/
-
-
     text-align: center;
     font-size: 100%;
     background-color: #f16c6b;
     color: #fafafa;
     display: block;
 }
-
 .booking-button:hover {
     background-color: #fafafa;
     color: #f16c6b;
@@ -366,30 +291,26 @@ footer ul >li i{
 
 /* This is styling for the gig info display on index/main page */
 .gig-wrapper {
-  padding: 30px;
-  display: flex;
-  align-items: center;
-
+    padding: 30px;
+    display: flex;
+    align-items: center;
 }
 .gig-wrapper h3{
-  height: 40px;
+    height: 40px;
 }
-
 .gig {
-  height: 50px;
-  overflow: hidden;
+    height: 50px;
+    overflow: hidden;
 }
 
 .gig > div span {
-  padding: 5px 15px;
-  height: 40px;
-  margin-bottom: 30px;
-  display: block;
-
+    padding: 5px 15px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: block;
 }
 .gig div:first-child{
-  animation: slide 8s linear infinite;
-
+    animation: slide 8s linear infinite;
 }
 /* this is the slide frames update */
 @keyframes slide{
@@ -424,167 +345,131 @@ footer ul >li i{
 
 @media screen and (min-width: 700px) {
 
-  #position_header_title {
-    background-color: maroon;
-    padding: 15px;
-    margin: 5px 0px 5px, 0px;
-    border: 1px solid black;
-    height: 10%;
-    width: 100%;
-    text-align: center;
+    #position_header_title {
+        background-color: maroon;
+        padding: 15px;
+        margin: 5px 0px 5px, 0px;
+        border: 1px solid black;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
 
-  }
+    header h1 {  
+        font-size: 200%;
+    }
 
-  header h1 {  
-    font-size: 200%;
-  }
+    .star-section h5{ 
+        color: #fff;
+        margin-top: 15px;
+    }
+    footer ul > li{
+        display: inline-block;
+        margin-right: 50px;  
+    }
+    footer ul >li i{
+        font-size: 120%;
+    }
 
-  .star-section h5{ 
-    color: #fff;
-    margin-top: 15px;
+    iframe {
+        width: 400px; 
+    }
+    .position-form {
+        margin: 5px 15px 15px 350px;
+    }
+    .ToFindOut p {
+        padding-left: 100px;
+        font-size: 100%;
+    }
+    nav {
+        height: 70px; 
+        background-color: black;
+        text-align: left;
+    }
 
-  }
-  footer ul > li{
-    display: inline-block;
-    margin-right: 50px;  
-  }
+    nav ul {
+        background-color: black;
+        max-width: 1210px;
+        margin: 15px auto;
+        padding: 0px -10px 0px -10px;
+        text-align: right;
+        width: 100%;
+        display: inline-block;
+    }
 
-  footer ul >li i{
-    font-size: 120%;
-  }
+    nav ul > li {
+        display: inline-block;
+        border-left: 1px solid black; 
+        text-align: center;
+        background-color: maroon;
+        margin-right: 5px;
+    }
+    .burger_menu{
+        display: none;
+    }
+    .band_pic{
+        float: left;
+        width: 20%;
+        padding-left: 17%;
+        height: 20em;
+        object-fit: cover;
+        border-right: 10px;
+    }
+    .bio {
+        float: left;
+        width: 40%;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+    .review_container_pos{
+        float: left;
+        width: 40%;
+        padding-left: 17%;
+    }
+    .testpic{
+        float: left;
+        width: 20%;
+        padding-left: 5%;
+        height: 20em;
+    }
+    #social_media{
+        clear: both;
+    }
 
-  iframe {
-
-    width: 400px; 
-  }
-
-  .position-form {
-
-     margin: 5px 15px 15px 350px;
-
-
-
-  }
-  .ToFindOut p {
-
-    padding-left: 100px;
-    font-size: 100%;
-
-  }
-
-  nav {
-    height: 70px; 
-    background-color: black;
-    text-align: left;
-  }
-
-
-  nav ul {
-
-
-    background-color: black;
-    max-width: 1210px;
-    margin: 15px auto;
-    padding: 0px -10px 0px -10px;
-    text-align: right;
-    width: 100%;
-    display: inline-block;
-
- }
-
-
-
-
-  nav ul > li {
-
-    display: inline-block;
-    border-left: 1px solid black; 
-    text-align: center;
-    background-color: maroon;
-    margin-right: 5px;
-
-   }
-
-
-
-  .burger_menu{
-    display: none;
-
-  }
-
-
-  .band_pic{
-    float: left;
-    width: 20%;
-    padding-left: 17%;
-    height: 20em;
-    object-fit: cover;*/
-    border-right: 10px;
-
-  }
-
-  .bio {
-    float: left;
-    width: 40%;
-    padding-top: 5%;
-    padding-left: 5%;
-
-  }
-  img{
-          max-width: 100%;
-          max-height: 100%;
-          display: block; /* remove extra space below image */
-      }
-
-  .review_container_pos{
-     float: left;
-     width: 40%;
-     padding-left: 17%;
-  }
-  .testpic{
-    float: left;
-    width: 20%;
-    padding-left: 5%;
-    height: 20em;
-
-  }
-  #social_media{
-    clear: both;
-
-  }
-
-  .gig-wrapper{
-    clear: both;
-  }
-  .star-wrapper{
-    width: 20%;
-  }
-
-  .reviewers {
-    width: 500px;
-  }
+    .gig-wrapper{
+        clear: both;
+    }
+    .star-wrapper{
+        width: 20%;
+    }
+    .reviewers {
+        width: 500px;
+    }
 
   /*below is setting to change to a custom scroll-bar has a nicer appearance tham the default scrollbar  */
   /* width */
-  ::-webkit-scrollbar {
-  width: 10px;
- }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-/* Track */
-  ::-webkit-scrollbar-track {
-  background: #f1f1f1;
- }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
 
-/* Handle */
-  ::-webkit-scrollbar-thumb {
-  background: #888;
- }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
 
-/* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-   background: #555;
- }
-
-
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
 }
