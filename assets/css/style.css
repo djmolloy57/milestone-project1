@@ -1,7 +1,7 @@
 
 /*Mobile first and then use Media Query for larger screens like tablet and desktops */
 
-*{ /* added gthis for whole site setting to get rid of any default padding, margins and border  today 18:15 at 12th April*/
+*{ 
   padding: 0px;
   margin: 0px;
   border:0;
@@ -16,7 +16,7 @@
 body {
     background-color: grey;
     color: black;
-    font-size: 16px; /* default font size of the web page */
+    font-size: 16px; 
     font-family: Arial, Helvectica, sans-serif;
 
 
@@ -24,8 +24,8 @@ body {
 
 #position_header_title {
   background-color: maroon;
-  padding: 12px; /*needed or not? Yes needed */
-  margin: 15px 0px 10px 0px; /*amended 4am on 14th Apr */
+  padding: 12px; 
+  margin: 15px 0px 10px 0px; 
   border: 1px solid black;
   height: 10%;
   width: 100%;
@@ -50,10 +50,7 @@ nav {
 nav ul {
 
   width: 100%;
-	/*margin: 0px; needed or not? not needed!! REMOVE!! */
-  /*padding: 0px; needed or not? not needed!! REMOVE !!*/
-	list-style-type: none;
-	/*font-size: 0px; needed or not?  not needed!! REMOVE !!*/
+  list-style-type: none;
   text-align: center;
   width: 80%;
   display: none;
@@ -65,8 +62,7 @@ nav ul li {
 
   background-color: maroon;
   color: white;
-  /*padding-top: 15%; /*needed or not? not needed!! REMOVE !!*/
-	padding: 14px;/*needed or not? YES*/
+  padding: 14px;
   text-align:  center;
   font-size: 1.1rem;
   border-bottom: 1px solid black;
@@ -81,7 +77,7 @@ nav a{
 
   display: block;
   border-bottom: 1px solid #EAEAB;
-  /*margin: 0; /*needed or not?not needed!! REMOVE !!*/
+
   font-size: 15px;
 }
 
@@ -96,13 +92,13 @@ nav ul li:hover {
 
   font-size: 25px;
   display: block;
-  /*width: 26px; /*needed or not?not needed!! REMOVE !!*/
+  
   float: right;
   padding-right: 0.01%;
   cursor: pointer;
-  padding-bottom: 10%; /*needed or not? Yes - it affect location  */
+  padding-bottom: 10%; 
   top: 35px;
-  right: 0;/*needed or not? Yes needed -it affect the location of burger menu icon*/
+  right: 0;
   color: var(--white);
 
 
@@ -124,8 +120,8 @@ nav ul li:hover {
 
 
 
- img{ /*needed or not needed */
-         /*border-top: 50px; /*needed or not? Not needed *REMOVE*/
+ img{ 
+         
          max-width: 100%;
          max-height: 100%;
          display: block; /* remove extra space below image */
@@ -137,30 +133,24 @@ nav ul li:hover {
 /* positioning rule to apply to different divs/sections on the website pages */
 
 .position-container {
-   max-width: 1020px; /*needed or not? Yes is needed*/
-   margin: 0px auto; /*needed or not? Yes is needed */
-   padding: 0px 20px;  /*needed or not?* Yes is needed*/
+   max-width: 1020px; 
+   margin: 0px auto; 
+   padding: 0px 20px; 
 
 }
 .position-form {
 
    margin: 5px 15px 15px 48px;
-   /*padding: 0px;   /*needed or not? No not needed *REMOVE*/
+  
 
 }
-/*.title_position-container { /* Needed or not - Not Needed - *REMOVE*/
 
-   /*margin: 0px auto; /*needed or not? No not needed *REMOVE*/
-   /*padding: 0px 16px;  /*needed or not? No not needed* REMOVE*/
-   /*text-align: center; /*needed or not?
-
-}*/
 
 .bio {
 
-  width: 90%; /*needed or not? Needed is affects alignment slightly*/
-  padding-top: 5%;  /*needed or not? Is Needed*/
-  padding-left: 5%; /*needed or not? Is Needed*/
+  width: 90%; 
+  padding-top: 5%;  
+  padding-left: 5%; 
 
 }
 
@@ -180,8 +170,8 @@ nav ul li:hover {
 }
 iframe {
   border: 1px solid red;
-  font-size: 70%; /*added today- no difference*/
-  width: 350px; /*added today - worked sizing iframe*/
+  font-size: 70%; 
+  width: 350px; 
   height: 200px;
 }
 
@@ -222,7 +212,7 @@ iframe {
 
 .star-section ol{
   list-style-type: none;
-  /*margin-top: 5px; /*needed or not? -  Not needed *REMOVE*/
+  
 
   font-weight: bold;
   margin: 5px 0px 0px 0px;
@@ -259,21 +249,21 @@ iframe {
 }
 
 .user_review {
-  height: 70px; /* added rule 27/03/2021 at 15:13 so I can set the review height to suitable - dimension - worked Yes/No - Yes */
+  height: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .user_review > p{
 
-  font-style: italic;  /*Added rule 27/03/2021 at 15:21 added text italic for review firts paragraph - Worked Yes */
-  overflow-wrap: break-word; /*Added rule 27/03/2021 at 18:44 to ensure text wraps to next line */
+  font-style: italic;  
+  overflow-wrap: break-word; 
 
 }
 
 
 .band_pic, .testpic {
-  position: relative;/*added tioday - made no difference*/
+  position: relative;
   text-align: center;
   display: block;
   height: 70%;
@@ -288,7 +278,7 @@ iframe {
 }
 
 .user_review footer > p span {
-  font-weight: bold; /*Added rule 27/03/2021 at 15:19 added bold to span - Worked Yes */
+  font-weight: bold; 
 }
 
 /* Footer styling for the social media */
@@ -305,9 +295,9 @@ footer ul{
 
 footer ul > li{
   display: inline-block;
-  /*margin-right: 50px;  worked on spacing out social media icons -orig setting */
-  margin-right: 30px;
-  font-size: 150%; /*worked on enlarging social media icons - */
+  
+  margin-right: 30px; /*spacing out social media icons -orig setting */
+  font-size: 150%; /*enlarging social media icons - */
 
 
 }
@@ -317,13 +307,13 @@ footer ul >li i{
   font-size: 100%;
   margin: 10%;
   padding: 20%;
-  color: black;  /*worked on colouring social media icons*/
+  color: black;  /*colouring social media icons*/
 
 }
 
-/* signup-form css was taken from Love Running project - needs tweeking */
+
 .booking-form {
-    /*margin: 150px 10% 0 0;*/
+   
     margin: 30px 10% 0 0;
 
     margin-top: 5%;
@@ -332,7 +322,7 @@ footer ul >li i{
     max-width: 380px;
 
     left: 20%;
-    /*padding: 40px;*/
+   
     padding: 20px;
 }
 
@@ -356,7 +346,7 @@ footer ul >li i{
 }
 
 .booking-button {
-    /*margin-top: 20px;*/
+   
     margin-top: 10px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;*/
@@ -445,18 +435,18 @@ footer ul >li i{
 
   }
 
-  header h1 {  /* added today 11th Apr */
+  header h1 {  
     font-size: 200%;
   }
 
-  .star-section h5{ /* added today 11th Apr */
+  .star-section h5{ 
     color: #fff;
     margin-top: 15px;
 
   }
   footer ul > li{
     display: inline-block;
-    margin-right: 50px;  /*worked on spacing out social media icons*/
+    margin-right: 50px;  
   }
 
   footer ul >li i{
@@ -465,7 +455,7 @@ footer ul >li i{
 
   iframe {
 
-    width: 400px; /*added today - worked sizing iframe*/
+    width: 400px; 
   }
 
   .position-form {
@@ -483,7 +473,7 @@ footer ul >li i{
   }
 
   nav {
-    height: 70px; /*added 27/03/2021 @ 23:42 to fix menu items height - work Yes/No - Yes - corrected height so it shows menu text which it does*/
+    height: 70px; 
     background-color: black;
     text-align: left;
   }
@@ -508,7 +498,7 @@ footer ul >li i{
   nav ul > li {
 
     display: inline-block;
-    border-left: 1px solid black; /*comment out 27/03/2021 at 13:45 to see what happens does menu option seperations go away Yes/No - YES */
+    border-left: 1px solid black; 
     text-align: center;
     background-color: maroon;
     margin-right: 5px;
