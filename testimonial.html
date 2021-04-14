@@ -2,13 +2,16 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <!--<meta name="viewport" content="width=device-width"> old setting-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
         <script src="https://kit.fontawesome.com/0c06d239a5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-          <div class="title_position-container">
+          <!--<div class="title_position-container">-->
+          <div id="position_header_title">
             <h1>DARK FLAME TESTIMONIALS</h1>
           </div>
           <nav>
@@ -16,19 +19,19 @@
             <input type="checkbox" id="toggle"/>
               <ul id="menu" class="menu_position-container">
                  <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" aria-label="Go to Home page" >Home</a>
                  </li>
                  <li>
-                   <a href="live.html">Live Samples</a>
+                   <a href="live.html" aria-label="Go to Live Samples page">Live Samples</a>
                  </li>
                  <li>
-                   <a href="testimonial.html">Testimonials</a>
+                   <a href="testimonial.html" aria-label="Go to Testimonials page">Testimonials</a>
                  </li>
                  <li>
-                   <a href="Contact.html">Contact</a>
+                   <a href="Contact.html" aria-label="Go to Contact page">Contact</a>
                  </li>
           </nav>
-        
+
           <section class="star-wrapper position-container">
             <div class="star-section position-container">
               <h5>Star Rating (www.weddingband.com)</h5>
@@ -40,14 +43,15 @@
 
             </div>
 
-          </section> 
-        </header> 
-        
+          </section>
+        </header>
+
         <div class="test_title">
           <h3>Customer Testimonials Below:</h3>
         </div>
         <section class="review_container_pos">
-      
+          <!--<section class="position-container">-->
+          <!--<h3>Customer Testimonials</h3> Commented out 27/03/2021 at 15:42 to move to header above-->
               <article class="user_review">
     				       <p>The band were great!! all our wedding guests greatly enjoyed the music</p>
     				       <footer>
@@ -60,16 +64,10 @@
     					            <p><span>Posted by</span> Derek and Mary, Dublin</p>
     				       </footer>
     			   </article>
+
     			   <article class="user_review">
-    				       <p>Band were so impressive, that several couples at our wedding have booked them
-    				          for their wedding
-    				        </p>
-    				       <footer>
-    					            <p><span>Posted by</span> Patrick and Maria, Wicklow</p>
-    				       </footer>
-    			   </article>
-    			   <article class="user_review">
-    				       <p>Thanks again to guys in the band for a great night of music on our wedding day
+    				       <p>
+                      The band played great music at our wedding.
     				       </p>
     				       <footer>
     					            <p><span>Posted by</span> Jack and Catherine, Dublin</p>
@@ -108,16 +106,21 @@
         <section>
           <div class="testpic">
             <img src="./assets/images/flame.jpg" alt="band picture">
+            
           </div>
         </section>
-        <footer  id="social_media">
+        <section>
+
+
+          <footer  id="social_media">
             <ul>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+              <li><a href="https://www.facebook.com"  aria-label="link to Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.twitter.com"   aria-label="link to Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="https://www.youtube.com"   aria-label="link to YouTube" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+              <li><a href="https://www.instagram.com" aria-label="link to Instagram" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
             </ul>
 
-        </footer>
+          </footer>
+        </section>
     </body>
 </html>
