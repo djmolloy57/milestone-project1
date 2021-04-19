@@ -17,12 +17,13 @@ body {
 }
 #position_header_title {
     background-color: maroon;
-    padding: 12px; 
+    padding: 12px 12px 12px 18px; 
     margin: 15px 0px 10px 0px; 
     border: 1px solid black;
-    height: 10%;
-    width: 100%;
-    text-align: center;
+    height: 23px;
+    width: 370px;
+    text-align: left;
+    font-size: 75%;
 }
 
 header h1 {
@@ -32,18 +33,21 @@ header h1 {
 /* Navigation styling  */
 nav {
 
-    width: 100%;
+    width: 370px;
     border-bottom: 10px;
 }
 nav ul {
-    width: 100%;
+    width: 395px;
     list-style-type: none;
     text-align: center;
-    width: 80%;
     display: none;
 }
+nav li > a {
+    padding-left: -60px;
+    margin-left: -60px;
+}
 
-nav ul li {
+nav li {
     background-color: maroon;
     color: white;
     padding: 14px;
@@ -71,10 +75,9 @@ nav ul li:hover {
     font-size: 25px;
     display: block;
     float: right;
-    padding-right: 0.01%;
+    padding-right: 1px;
     cursor: pointer;
-    padding-bottom: 10%; 
-    top: 35px;
+    top: 20px;
     right: 0;
     color: var(--white);
 }
@@ -90,8 +93,8 @@ nav ul li:hover {
 /* styling the hero/band logo image */
 
 img{ 
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 280px;
+    max-height: 280px;
     display: block; 
 }
 
@@ -107,9 +110,13 @@ img{
 }
 
 .bio {
-    width: 90%; 
-    padding-top: 5%;  
-    padding-left: 5%; 
+    width: 230px; 
+    padding-top: 15px;  
+    padding-left: 15px; 
+}
+.bio > p {
+    font-size: 60%;
+    overflow-wrap: break-word;
 }
 
 .menu_position-container {
@@ -207,15 +214,14 @@ iframe {
     position: relative;
     text-align: center;
     display: block;
-    height: 70%;
-    width: 70%;
     margin-top: 15px;
-    max-width: 1020px;
+    /*max-width: 1020px;*/
     padding: 0px 16px;
-    margin-left: 50px;
+    margin-left: 38px;
 }
 .user_review footer {
     margin-bottom: 10px;
+    
 }
 
 .user_review footer > p span {
@@ -291,12 +297,14 @@ footer ul >li i{
 
 /* This is styling for the gig info display on index/main page */
 .gig-wrapper {
-    padding: 30px;
+    padding-top: 10px;
+    padding-left: 40px;
     display: flex;
     align-items: center;
 }
 .gig-wrapper h3{
     height: 40px;
+    font-size: 60%;
 }
 .gig {
     height: 50px;
@@ -304,6 +312,7 @@ footer ul >li i{
 }
 
 .gig > div span {
+    font-size: 60%;
     padding: 5px 15px;
     height: 40px;
     margin-bottom: 30px;
@@ -350,8 +359,7 @@ footer ul >li i{
         padding: 15px;
         margin: 5px 0px 5px, 0px;
         border: 1px solid black;
-        height: 10%;
-        width: 100%;
+        width: 1520px;
         text-align: center;
     }
 
@@ -385,15 +393,16 @@ footer ul >li i{
         height: 70px; 
         background-color: black;
         text-align: left;
+        width: 1550px;
     }
 
     nav ul {
         background-color: black;
-        max-width: 1210px;
+        max-width: 1300px;
         margin: 15px auto;
         padding: 0px -10px 0px -10px;
         text-align: right;
-        width: 100%;
+        width: 1300px;
         display: inline-block;
     }
 
@@ -404,27 +413,42 @@ footer ul >li i{
         background-color: maroon;
         margin-right: 5px;
     }
+    nav li > a {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
     .burger_menu{
         display: none;
     }
     .band_pic{
         float: left;
         width: 20%;
-        padding-left: 17%;
+        padding-left: 237px;
         height: 20em;
         object-fit: cover;
         border-right: 10px;
     }
     .bio {
         float: left;
-        width: 40%;
-        padding-top: 5%;
-        padding-left: 5%;
+        width: 550px;
+        padding-top: 55px;
+        padding-left: 110px;
     }
+    .bio > p {
+        font-size: 100%;
+    }
+    .gig div > span {
+        font-size: 100%;
+    }
+    .gig-wrapper h3 {
+        font-size: 100%;
+    }
+
     img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block; /* remove extra space below image */
+        max-width: 250px;
+        max-height: 250px;
+        display: block; 
     }
     .review_container_pos{
         float: left;
@@ -442,6 +466,7 @@ footer ul >li i{
     }
 
     .gig-wrapper{
+        padding-top: 50px;
         clear: both;
     }
     .star-wrapper{
