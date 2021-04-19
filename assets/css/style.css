@@ -373,10 +373,240 @@ footer ul >li i{
     margin-top: -240px;
   }
 }
+/*Tablet/ipad format styling below  */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  #position_header_title {
+    padding: 15px;
+    margin: 5px 0px 5px, 0px;
+    height: 30px;
+    width: 790px;
+    text-align: center;
+  }
+  menu_position-container {
+    height: 70px;
+    padding: 0px -14px 0px -14px;
+  }
 
-/* tablet and desktop format styling below */
+  header h1{
+      font-size: 200%;
+  }
+  nav {
+        height: 70px; 
+        background-color: black;
+        text-align: left;
+        width: 790px;
+  }      
 
-@media screen and (min-width: 700px) {
+  nav ul {
+    background-color: black;
+    /*margin: 10px auto;*/
+    padding: 0px -10px 0px -10px;
+
+    text-align: right;
+    max-width: 790px;
+    width: 750px;
+    display: inline-block;
+  }
+
+  
+
+  nav ul > li {
+        display: inline-block;
+        border-left: -165px solid white; 
+        background-color: maroon;
+        margin-right: 5px;
+        border-right: 10px;
+        width: 60px;
+        text-align: center;
+        
+  }
+  #menu li > a {
+        /*text-align: right;*/
+        padding-left: 52px; 
+        font-size: 60%;
+        /*padding-left: -10px; prev comment out before last above change*/
+        /*margin-left: 20px;*/
+  }
+
+  .burger_menu{
+    display: none;
+
+  }
+  iframe {
+
+    /*width: 400px; /*added today - worked sizing iframe*/
+    height: 90%;
+    width: 100%;
+
+  }
+  img{ 
+
+    max-width: 120%; 
+    max-height: 120%; 
+    display: block; 
+  }
+
+
+  /* */
+  .star-section h5{ /* added today 11th Apr */
+    color: var(--white);
+    margin-top: 15px;
+
+  }
+
+  .star-section ol{
+    font-size: 80%;
+
+
+  }
+  .star-section li{
+    font-size: 80%;
+
+
+  }
+  .star-section i{
+      font-size: 80%;
+  }
+  
+  iframe {
+    height: 100%;
+    width: 35%;
+  }
+
+
+  .ToFindOut p {
+
+    padding-left: 80px;
+    font-size: 80%;
+
+  }
+  .band_pic{
+    float: left;
+    width: 20%;
+    padding-left: 10%;
+    height: 20em;
+    object-fit: cover;*/
+    border-right: 10px;
+
+  }
+
+   /*  */
+   .bio {
+     float: left;
+     width: 40%;
+     padding-top: 5%;
+     padding-left: 5%;
+
+   }
+   .bio p {
+     font-size: 80%;
+   }
+   .gig span {
+     font-size: 100%;
+   }
+   .gig-wrapper {
+     display: inline-block;
+     padding-left: 5%;/**/
+     /*padding: 0;*/
+     margin: 0;
+
+     border: 0;
+
+   }
+   .gig-wrapper h3{
+     font-size: 80%;
+
+   }
+   .gig {
+       height: 20px;
+       margin-bottom: 100px;
+       
+   }
+   .position-form {
+
+      /*margin: 5px 15px 15px 350px;*/
+      margin: 1px 15px 1px 135px;
+      padding: 0;
+      border: 0;
+
+
+   }
+
+   .booking-form {
+
+      /*margin: 20px 05% 0 0; comment out as test 18:53 16th April */
+      margin-left: 1%; /* as test 18:53 16th April */
+
+
+      color: var(--white);
+      background-color: rgba(60, 60, 60, 0.6);
+      max-width: 380px;
+  }
+
+  .test_title {
+      margin-left: 90px;
+      width: 545px;
+  }
+  .review_container_pos{
+      float: left;
+      padding-left: -10px;
+      margin-left: 90px;
+
+  }
+  .testpic{
+        width: 330px;
+        height: 330px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 94px;
+        padding-bottom: 0px;
+    }
+  .star-wrapper{
+      margin-left: 90px;
+  }
+  .star-section h5{
+    /*color: #fff;*/
+
+    font-size: 80%;
+
+
+  }
+
+  .star-section ol{
+
+    font-size: 70%;
+
+
+  }
+
+  .ToFindOut p {
+    padding-left: 8%;
+  }
+  footer{
+     clear: both;
+  }
+
+  footer ul > li{
+    display: inline-block;
+    margin-right: 50px;  /*worked on spacing out social media icons*/
+  }
+
+  footer ul >li i{
+    font-size: 120%;
+  }
+
+
+
+
+
+}
+    
+/* desktop format styling below */
+
+/*@media screen and (min-width: 700px) */
+@media screen and (min-width: 1025px){
 
     #position_header_title {
         background-color: maroon;
@@ -436,6 +666,7 @@ footer ul >li i{
         text-align: center;
         background-color: maroon;
         margin-right: 5px;
+        width: 100px;
     }
     nav li > a {
     padding-left: 0px;
