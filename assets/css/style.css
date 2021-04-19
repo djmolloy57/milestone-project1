@@ -93,8 +93,10 @@ nav ul li:hover {
 /* styling the hero/band logo image */
 
 img{ 
-    max-width: 280px;
-    max-height: 280px;
+    /*max-width: 280px;*/
+    /*max-height: 280px;*/
+    max-width: 100%; /*added today 19th Apr */
+    max-height: 100%; /*added today 19th Apr */
     display: block; 
 }
 
@@ -238,6 +240,11 @@ iframe {
     /*max-width: 1020px;*/
     padding: 0px 16px;
     margin-left: 38px;
+    max-width: 180px;/* added today 19th Apr*/
+    max-height: 180px;/*added today 19th Apr */
+    padding-bottom: 55px;
+    /*margin-bottom: 25px;*/
+
 }
 
 
@@ -438,14 +445,7 @@ footer ul >li i{
     .burger_menu{
         display: none;
     }
-    .band_pic{
-        float: left;
-        width: 20%;
-        padding-left: 237px;
-        height: 20em;
-        object-fit: cover;
-        border-right: 10px;
-    }
+    
     .bio {
         float: left;
         width: 550px;
@@ -463,8 +463,8 @@ footer ul >li i{
     }
 
     img{
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 170%;
+        max-height: 170%;
         display: block; 
     }
     .review_container_pos{
@@ -504,13 +504,25 @@ footer ul >li i{
         width: 973px;
         height: 30px;
     }
-    .testpic{
-        /*float: left;
-        width: 20%;
-        padding-left: 5%;
-        height: 20em;*/
+    .band_pic{
         float: left;
-        padding-left: 102px;
+        height: 500px;
+        width: 500px;
+        padding-left: 237px;
+        object-fit: cover;
+        border-right: 10px;
+        padding-bottom: 125px;
+        padding-right: 150px;
+    }
+    .testpic{
+        width: 230px;
+        height: 230px;
+        float: left;
+        margin-top: 1px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 122px;
+        padding-bottom: 0px;
     }
     #social_media{
         clear: both;
