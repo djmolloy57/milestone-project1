@@ -133,7 +133,7 @@ img{
 iframe {
     border: 1px solid red;
     font-size: 70%; 
-    width: 350px; 
+    width: 270px; 
     height: 200px;
 }
 
@@ -142,10 +142,18 @@ iframe {
     padding: 1%;
 }
 
-.ToFindOut p {
+.ToFindOut > p {
     padding-top: 10px;
-    padding-left: 40px;
-    font-size: 80%;
+    padding-left: 2px;
+    font-size: 60%;
+    text-align: left;
+    margin-left: 2px;
+}
+.ToFindOut a:link {
+  color: maroon;
+}
+.ToFindOut a:visited {
+  color: maroon;
 }
 
 /* styling for the testimonial page  */
