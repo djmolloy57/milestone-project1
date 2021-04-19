@@ -158,8 +158,8 @@ iframe {
 
 /* styling for the testimonial page  */
 .star-wrapper{
-    width: 58%;
-    height: 130px;
+    width: 170px;
+    height: 90px;
     padding: 1px 50px 0 50px;
     border-top: 10px;
     background-color: maroon;
@@ -168,7 +168,7 @@ iframe {
 }
 .star-section h5{
     color: var(--white);
-    font-size: 90%;
+    font-size: 60%;
     margin-top: 12px;
     margin-bottom: 2px;
     margin-left: 1px;
@@ -177,22 +177,21 @@ iframe {
 .star-section ol{
     list-style-type: none;
     font-weight: bold;
-    margin: 5px 0px 0px 0px;
     text-align: left;
-    padding: 0px 0px;
+    font-size: 60%;
+    margin-left: 2px;
 }
 .star-section li{
     font-size: 90%;
-    text-align: left;
+   
 }
-
 .review_container_pos{
     max-width: 1020px;
     margin: 0px auto;
     padding: 0px 16px;
     overflow: auto;
     height: 300px;
-    width: 70%;
+    width: 250px;
 }
 
 .test_title{
@@ -202,8 +201,12 @@ iframe {
     max-width: 1020px;
     margin: 0px auto;
     padding: 0px 16px;
-    width: 66%;
+    width: 240px;
+    height: 20%;
     margin-top: 5px;
+}
+.test_title h3{
+    font-size: 90%;
 }
 
 .user_review {
@@ -215,8 +218,17 @@ iframe {
 .user_review > p{
     font-style: italic;  
     overflow-wrap: break-word; 
+    font-size: 80%;
+}
+.user_review footer {
+    font-size: 80%;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
+.user_review footer > p span {
+    font-weight: bold; 
+}
 
 .band_pic, .testpic {
     position: relative;
@@ -227,14 +239,7 @@ iframe {
     padding: 0px 16px;
     margin-left: 38px;
 }
-.user_review footer {
-    margin-bottom: 10px;
-    
-}
 
-.user_review footer > p span {
-    font-weight: bold; 
-}
 
 /* Footer styling for the social media */
 
@@ -460,14 +465,48 @@ footer ul >li i{
     }
     .review_container_pos{
         float: left;
-        width: 40%;
-        padding-left: 17%;
+        width: 590px;
+        padding-left: 270px;
+    }
+    .user_review {
+      padding: 0;
+    }
+    .user_review > p{
+      font-size: 90%;
+      overflow-wrap: break-word;
+    }
+    .user_review footer {
+      font-size: 90%;
+      padding: 0;
+    }
+    .star-section ol{
+      font-size: 90%;
+    }
+    .star-section li{
+      font-size: 90%;
+    }
+    .star-section i{
+        font-size: 90%;
+    }
+    .star-wrapper{
+        width: 20%;
+    }
+    .reviewers {
+        width: 500px;
+    }
+    .test_title{
+        padding-top: 10px;
+        padding-bottom: 0px;
+        width: 973px;
+        height: 30px;
     }
     .testpic{
-        float: left;
+        /*float: left;
         width: 20%;
         padding-left: 5%;
-        height: 20em;
+        height: 20em;*/
+        float: left;
+        padding-left: 102px;
     }
     #social_media{
         clear: both;
@@ -477,12 +516,7 @@ footer ul >li i{
         padding-top: 50px;
         clear: both;
     }
-    .star-wrapper{
-        width: 20%;
-    }
-    .reviewers {
-        width: 500px;
-    }
+    
 
   /*below is setting to change to a custom scroll-bar has a nicer appearance tham the default scrollbar  */
   /* width */
