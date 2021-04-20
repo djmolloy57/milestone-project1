@@ -93,20 +93,14 @@ nav ul li:hover {
 /* styling the hero/band logo image */
 
 img{ 
-    /*max-width: 280px;*/
-    /*max-height: 280px;*/
-    max-width: 100%; /*added today 19th Apr */
-    max-height: 100%; /*added today 19th Apr */
+    max-width: 100%; 
+    max-height: 100%; 
     display: block; 
 }
 
 /* positioning rule to apply to different divs/sections on the website pages */
 
-.position-container {
-   max-width: 1020px; 
-   margin: 0px auto; 
-   padding: 0px 20px; 
-}
+
 .position-form {
    margin: 5px 15px 15px 48px;
 }
@@ -114,7 +108,8 @@ img{
 .bio {
     width: 230px; 
     padding-top: 15px;  
-    padding-left: 15px; 
+    max-width: 1020px;
+    padding-left: 40px; 
 }
 .bio > p {
     font-size: 60%;
@@ -143,6 +138,9 @@ iframe {
     display: inline;
     padding: 1%;
 }
+.ToFindOut{
+    padding-left: 20px;
+}
 
 .ToFindOut > p {
     padding-top: 10px;
@@ -159,7 +157,7 @@ iframe {
 }
 
 /* styling for the testimonial page  */
-.star-wrapper{
+.star-wrapper-pos{
     width: 170px;
     height: 90px;
     padding: 1px 50px 0 50px;
@@ -167,6 +165,8 @@ iframe {
     background-color: maroon;
     margin-top: 15px;
     margin-bottom: 1px;
+    max-width: 1020px;
+    margin: 0px auto;
 }
 .star-section h5{
     color: var(--white);
@@ -237,14 +237,11 @@ iframe {
     text-align: center;
     display: block;
     margin-top: 15px;
-    /*max-width: 1020px;*/
     padding: 0px 16px;
     margin-left: 38px;
-    max-width: 180px;/* added today 19th Apr*/
-    max-height: 180px;/*added today 19th Apr */
+    max-width: 180px;
+    max-height: 180px;
     padding-bottom: 55px;
-    /*margin-bottom: 25px;*/
-
 }
 
 
@@ -254,24 +251,20 @@ footer{
     height: 150px;
     padding-top: 20px;
 }
-
 footer ul{
     text-align: center;
 }
-
 footer ul > li{
     display: inline-block;
-    margin-right: 30px; /*spacing out social media icons -orig setting */
-    font-size: 150%; /*enlarging social media icons - */
+    margin-right: 30px; 
+    font-size: 150%; 
 }
-
 footer ul >li i{
     font-size: 100%;
     margin: 10%;
     padding: 20%;
-    color: black;  /*colouring social media icons*/
+    color: black;  
 }
-
 .booking-form {
     margin: 30px 10% 0 0;
     margin-top: 15px;
@@ -280,7 +273,6 @@ footer ul >li i{
     max-width: 380px;
     padding: 20px;
 }
-
 .booking-form h2 {
     color: #fff;
     margin-bottom: 10px;
@@ -289,7 +281,6 @@ footer ul >li i{
 .booking-form label {
     font-size: 70%;
 }
-
 .text-input {
     background: transparent;
     color: #fafafa;
@@ -302,11 +293,10 @@ footer ul >li i{
 .text-input:hover {
     border-color: #f16c6b;
 }
-
 .booking-button {
     margin-top: 10px;
     border-radius: 2px;
-    padding: 15px 32px 15px 32px;*/
+    padding: 15px 32px 15px 32px;
     text-align: center;
     font-size: 100%;
     background-color: #f16c6b;
@@ -334,7 +324,6 @@ footer ul >li i{
     height: 50px;
     overflow: hidden;
 }
-
 .gig > div span {
     font-size: 60%;
     padding: 5px 15px;
@@ -379,14 +368,13 @@ footer ul >li i{
     padding: 15px;
     margin: 5px 0px 5px, 0px;
     height: 30px;
-    width: 790px;
+    width: 768px;
     text-align: center;
   }
   menu_position-container {
     height: 70px;
     padding: 0px -14px 0px -14px;
   }
-
   header h1{
       font-size: 200%;
   }
@@ -394,103 +382,75 @@ footer ul >li i{
         height: 70px; 
         background-color: black;
         text-align: left;
-        width: 790px;
+        width: 768px;
   }      
-
   nav ul {
     background-color: black;
-    /*margin: 10px auto;*/
+    max-width: 1300px;
+    margin: 15px auto;
     padding: 0px -10px 0px -10px;
-
     text-align: right;
-    max-width: 790px;
-    width: 750px;
+    width: 768px;
     display: inline-block;
   }
-
-  
-
   nav ul > li {
         display: inline-block;
-        border-left: -165px solid white; 
+        border-left: 1px solid white;
+        text-align: center; 
         background-color: maroon;
         margin-right: 5px;
-        border-right: 10px;
-        width: 60px;
-        text-align: center;
-        
+        width: 75px;        
   }
-  #menu li > a {
-        /*text-align: right;*/
-        padding-left: 52px; 
-        font-size: 60%;
-        /*padding-left: -10px; prev comment out before last above change*/
-        /*margin-left: 20px;*/
+  nav li > a {
+        padding-left: 0px;
+        margin-left: 0px; 
+        font-size: 70%;
   }
-
   .burger_menu{
     display: none;
-
   }
   iframe {
-
     /*width: 400px; /*added today - worked sizing iframe*/
     height: 90%;
     width: 100%;
-
   }
   img{ 
-
     max-width: 120%; 
     max-height: 120%; 
     display: block; 
   }
-
-
-  /* */
-  .star-section h5{ /* added today 11th Apr */
+  .star-section h5{ 
     color: var(--white);
     margin-top: 15px;
-
   }
-
   .star-section ol{
     font-size: 80%;
-
-
   }
   .star-section li{
     font-size: 80%;
-
-
   }
   .star-section i{
       font-size: 80%;
-  }
-  
+  } 
   iframe {
     height: 100%;
     width: 35%;
   }
-
-
+  .ToFindOut{
+      padding-left: 40px;
+  }
   .ToFindOut p {
-
     padding-left: 80px;
-    font-size: 80%;
-
+    font-size: 70%;
   }
   .band_pic{
     float: left;
     width: 20%;
     padding-left: 10%;
     height: 20em;
-    object-fit: cover;*/
+    object-fit: cover;
     border-right: 10px;
-
   }
-
-   /*  */
    .bio {
      float: left;
      width: 40%;
@@ -506,43 +466,28 @@ footer ul >li i{
    }
    .gig-wrapper {
      display: inline-block;
-     padding-left: 5%;/**/
-     /*padding: 0;*/
+     padding-left: 5%;
      margin: 0;
-
      border: 0;
-
    }
    .gig-wrapper h3{
      font-size: 80%;
-
    }
    .gig {
        height: 20px;
-       margin-bottom: 100px;
-       
+       margin-bottom: 100px;       
    }
    .position-form {
-
-      /*margin: 5px 15px 15px 350px;*/
       margin: 1px 15px 1px 135px;
       padding: 0;
       border: 0;
-
-
    }
-
    .booking-form {
-
-      /*margin: 20px 05% 0 0; comment out as test 18:53 16th April */
       margin-left: 1%; /* as test 18:53 16th April */
-
-
       color: var(--white);
       background-color: rgba(60, 60, 60, 0.6);
       max-width: 380px;
   }
-
   .test_title {
       margin-left: 90px;
       width: 545px;
@@ -551,7 +496,6 @@ footer ul >li i{
       float: left;
       padding-left: -10px;
       margin-left: 90px;
-
   }
   .testpic{
         width: 330px;
@@ -563,49 +507,32 @@ footer ul >li i{
         padding-left: 94px;
         padding-bottom: 0px;
     }
-  .star-wrapper{
+  .star-wrapper-pos{
+      margin-top: 15px;
       margin-left: 90px;
   }
   .star-section h5{
-    /*color: #fff;*/
-
     font-size: 80%;
-
-
   }
 
   .star-section ol{
-
     font-size: 70%;
-
-
   }
-
   .ToFindOut p {
     padding-left: 8%;
   }
   footer{
      clear: both;
   }
-
   footer ul > li{
     display: inline-block;
-    margin-right: 50px;  /*worked on spacing out social media icons*/
+    margin-right: 50px; 
   }
-
   footer ul >li i{
     font-size: 120%;
   }
-
-
-
-
-
-}
-    
+}    
 /* desktop format styling below */
-
-/*@media screen and (min-width: 700px) */
 @media screen and (min-width: 1025px){
 
     #position_header_title {
@@ -616,14 +543,15 @@ footer ul >li i{
         width: 1520px;
         text-align: center;
     }
-
     header h1 {  
         font-size: 200%;
     }
-
     .star-section h5{ 
         color: #fff;
         margin-top: 15px;
+    }
+    footer{
+        clear: both;
     }
     footer ul > li{
         display: inline-block;
@@ -632,7 +560,6 @@ footer ul >li i{
     footer ul >li i{
         font-size: 120%;
     }
-
     iframe {
         width: 400px; 
     }
@@ -640,7 +567,7 @@ footer ul >li i{
         margin: 5px 15px 15px 350px;
     }
     .ToFindOut p {
-        padding-left: 100px;
+        padding-left: 345px;
         font-size: 100%;
     }
     nav {
@@ -649,7 +576,6 @@ footer ul >li i{
         text-align: left;
         width: 1550px;
     }
-
     nav ul {
         background-color: black;
         max-width: 1300px;
@@ -692,7 +618,6 @@ footer ul >li i{
     .gig-wrapper h3 {
         font-size: 100%;
     }
-
     img{
         max-width: 170%;
         max-height: 170%;
@@ -723,11 +648,20 @@ footer ul >li i{
     .star-section i{
         font-size: 90%;
     }
-    .star-wrapper{
-        width: 20%;
+    .star-wrapper-pos{
+        max-width: 1020px;
+        margin: 0px auto;
+        padding: 5px 20px;
+        width: 20%; 
+        margin-top: 15px;   
     }
     .reviewers {
         width: 500px;
+    }
+    .position-videolist
+    {
+        padding-left: 220px;
+        padding-right: 220px;
     }
     .test_title{
         padding-top: 10px;
@@ -739,7 +673,7 @@ footer ul >li i{
         float: left;
         height: 500px;
         width: 500px;
-        padding-left: 237px;
+        padding-left: 300px;
         object-fit: cover;
         border-right: 10px;
         padding-bottom: 125px;
@@ -764,12 +698,14 @@ footer ul >li i{
     .booking-form > h2 {
         font-size: 120%;
     }
-
-
-
+    .ToFindOut{
+        padding-left: 2px;
+    }
     .gig-wrapper{
         padding-top: 50px;
+        padding-left: 300px;
         clear: both;
+        padding-bottom: 50px;
     }
     
 
